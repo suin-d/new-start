@@ -26,6 +26,7 @@ export default function MovieApp() {
     <>
       <Header />
       <Bannerb item={success.results[0]} />
+      <h1 className="section__title">Box Office</h1>
       <div className="item__parent inner">
         {success.results.map((v) => (
           <MovieItem item={v} key={v.id} />
