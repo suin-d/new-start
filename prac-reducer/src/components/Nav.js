@@ -14,6 +14,9 @@ export default function Nav() {
       <NavLink to="/movie" activeStyle={{ textDecoration: "underline" }}>
         MOVIE
       </NavLink>
+      <NavLink to="/movie/suin" activeStyle={{ textDecoration: "underline" }}>
+        DETAIL
+      </NavLink>
     </nav>
   );
 }

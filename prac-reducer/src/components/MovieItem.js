@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MovieItem({ item }) {
   return (
-    <div className="item__wrapper">
+    <Link to={`/movie/${item.id}`} className="item__wrapper">
+      {/* 개별 영화 클릭 시 디테일 페이지 연결 */}
       <img
         src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
         alt={item.id}
@@ -16,6 +18,6 @@ export default function MovieItem({ item }) {
       <div className="score">
         <h1>{item.vote_average}</h1>
       </div>
-    </div>
+    </Link>
   );
 }
